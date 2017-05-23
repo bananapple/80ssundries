@@ -1,0 +1,25 @@
+// typogrphy
+$display-font: 'Bungee', cursive, sans-serif;
+$deco-font: 'Permanent Marker', cursive, sans-serif;
+$font-size-base: 100% !default;
+$line-height-base: 1.6em;
+$heading-color: #444;
+$font-color-base: #777777 !default;
+$font-color-light: lighten($font-color-base, 30%) !default;
+$b0ss-yellow: #F8E71C !default;
+
+// padding & margin
+$padding-base-vert: 6px !default;
+$padding-base-horizon: 12px !default;
+$gutter-base: 6px;
+$blank-sky: 40px;
+
+//color
+$primary: #F8E81C;
+$primary-hover: lighten($primary, 20%) !default;
+
+// breakpoints
+$desktop-width: 1169px;
+$tablet-width: 768px;
+$mobile-width-p: 414px;
+$mobile-width-h: 736px;

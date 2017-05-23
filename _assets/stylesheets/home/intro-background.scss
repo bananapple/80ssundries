@@ -1,0 +1,29 @@
+.intro-background{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  svg{
+    width: auto;
+    height: 1200px;
+  }
+  .opacity{
+    opacity: 0.8;
+  }
+  .horizon{
+    animation: roadtrip 2s linear infinite;
+  }
+}
+
+@keyframes roadtrip{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-20%);
+  }
+  0%{
+    transform: translateY(0%);
+  }
+}

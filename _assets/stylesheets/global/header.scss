@@ -1,0 +1,121 @@
+.header{
+  padding: $padding-base-vert $padding-base-horizon;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .logo{
+    h1{
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin: 0;
+      &>a{
+        display: block;
+        padding: 6px 0 8px 0;
+        font-weight: bolder;
+        border: none;
+      }
+      @media screen and (max-width: $tablet-width){
+        display: none;
+      }
+    }
+    .mobile-logo{
+      display: none;
+      a{
+        border: none;
+      }
+      @media screen and (max-width: $tablet-width){
+        margin-top: 1px;
+        display: block;
+      }
+    }
+  }
+  .nav{
+    margin-left: 20px;
+    @media screen and (max-width: $tablet-width){
+      padding-left: 10px;
+      margin-left: 0;      
+    }
+    @media screen and (max-width: $mobile-width-h){
+      float: none;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0;
+      font-size: 0.8em;
+    }
+    .nav-list{
+      display: flex;
+      flex-direction: row;
+      padding: 9px 0;
+      a{
+        border: none;
+      }
+      @media screen and (max-width: $tablet-width){
+        padding: 0;
+      }    
+    }       
+    .nav-items{
+      margin-right: 14px;
+      @media screen and (max-width: $mobile-width-h){
+        display: flex;
+        justify-content: space-between;
+        margin-right: 7px;
+      }
+    }
+    &>a{
+      padding: 8px 10px;
+      border: none;
+      @media screen and (max-width: $tablet-width){
+        padding: 8px 4px;
+        font-size: 1em;
+      }
+      @media screen and (max-width: $mobile-width-h){
+        padding: 8px 2px;
+        font-size: 1em; 
+      }
+    }
+    .active{
+      &>a{
+        margin-top: -2px;
+        color: #fff;
+        opacity: 0.9;
+        text-shadow:
+          0 0 0 #333,
+          -1px 0 0 #333,
+          0 -1px 0 #333,
+          1px 1px 0 #333,
+          2px 2px 0 #333,
+          3px 3px 0 #333,
+          4px 4px 0 #333;
+        &:hover,
+        &:focus{
+          opacity: 1;
+          border: none;
+        }
+      }
+    }
+  }
+}
+header.clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: rgba(#fff,0.8);
+  transform: translateY(-100%);
+  transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+  &>a{
+    color: rgba(#333, 0.4);
+    border: none;
+    &:hover,
+    &:focus{
+      color: rgba(#333, 1);
+    }
+  }
+  @media screen and (max-width: $tablet-width){
+    background-color: rgba(#eee,0.6);
+  }
+}
+body.down header.clone {
+  transform: translateY(0);
+}

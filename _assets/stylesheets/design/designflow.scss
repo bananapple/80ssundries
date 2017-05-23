@@ -1,0 +1,106 @@
+.sec-design-intro{
+  overflow: hidden;
+  .l-container{
+    padding-top: 44px;
+  }
+}
+.desigflow-header{
+  position: absolute;
+  z-index: 100;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and(max-width: $mobile-width-h){
+    top: 60px;
+  }
+  h2{
+    color: #333;
+    line-height: 1.6em;
+  }
+  .slogan-small{
+    line-height: 1em;
+    margin-bottom: 6px;
+    @media screen and(max-width: $mobile-width-h){
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+  }
+  .slogan-big{
+    font-size: 80px;
+    line-height: 1em;
+    @media screen and(max-width: $mobile-width-h){
+      font-size: 60px;
+    }
+  }
+}
+.designflow{
+  display: flex;
+  position: relative;
+  max-width: 607px;
+  height: 467px;
+  background: url("/assets/images/design/designers-never-say-die_triangle.gif") no-repeat ;
+  @media screen and(max-width: $mobile-width-h){
+    height: 380px;
+    background-size: 100% 60%;
+  }
+  .character-left{
+    position: absolute;
+    left: -40px;
+    top: -50px;
+    @media screen and(max-width: $mobile-width-h){
+      left: -20px;
+      width: 120px;
+    }    
+  }
+  .character-right{
+    position: absolute;
+    right: -20px;
+    top: -50px;
+    @media screen and(max-width: $mobile-width-h){
+      width: 120px;
+    }
+  }
+  .character-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and(max-width: $mobile-width-h){
+      width: 120px;
+      left: 46%;
+      transform: translateX(-46%);      
+    }
+  }
+  figure{
+    flex-basis: 33%;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+    img{
+      max-width: 100%;
+    }
+    @media screen and (max-width: $mobile-width-h){
+      width: 100%;
+    }
+  }
+}
+.designflow-background{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+  width: 100%;
+  border-bottom: 2px solid $b0ss-yellow;
+  img{
+    width: 100%;
+    @media screen and (max-width: $mobile-width-h){
+      max-width: initial;
+      width: auto;
+      height: 400px;
+      left: 50%;
+      transform: translateX(-25%);
+    }
+  }
+}

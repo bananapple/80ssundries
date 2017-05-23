@@ -1,0 +1,56 @@
+---
+layout: default
+title: design
+navigation_weight: 1
+category: design
+---
+<section class="sec-design-intro l-container-fluid">
+  <div class="l-container">
+    <div class="desigflow-header">
+      <h2 class="heading-display text-center br">
+        <span class="slogan-small">Designers</span>
+        <span class="slogan-big">never say die!</span>
+      </h2>      
+    </div>
+    <div class="designflow center-vertical">
+      <div class="character-left sm-width-4">
+        <img src="/assets/images/design/litsening.gif" alt="">
+      </div>
+      <div class="character-right sm-width-4">
+        <img src="/assets/images/design/prototype.gif" alt="">
+      </div>
+      <div class="character-bottom sm-width-4">
+        <img src="/assets/images/design/develop.gif" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="designflow-background">
+    <img src="/assets/images/design/designers-never-say-die_grid.png">
+  </div>
+</section>
+
+<section class="design-list_wraper l-container-fluid">
+  <div class="design-list l-container">
+    <div class="placeholder">
+      I'm working on new projects, browse my previous projects on <a href="https://www.behance.net/bananapple" target="_blank">behance</a>, thanks!
+    </div>
+    {% for post in site.posts %}
+      {% if post.categories contains 'design' %}
+        <div class="post">
+          <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" /></a>
+          <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <div class="entry">
+          {{ post.content | strip_html | truncatewords: 10 }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if page.paginator %}
+    {% assign paginator = page.paginator %}
+  {% endif %}
+  {% for post in paginator.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endfor %}
+
+</section>

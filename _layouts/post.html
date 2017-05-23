@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="post l-container">
+  <article class="post-article">
+    <div class="post-header">
+      <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+    </div>
+    <div class="post-content">
+      {{ content }}
+    </div> 
+  </article>  
+  <div class="pagination clearfix">
+  {% for category in site.categories %}
+    {% assign catg_name = category.first %}
+    {% if catg_name == page.category %}
+      {% assign catg_posts = category.last %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in catg_posts %}
+    {% if post.title == page.title %}
+      {% unless forloop.first %}
+        <div class="pagination-group prev">
+          <a href="{{ site.baseurl }}{{ prev.url }}">
+            <div class="pagination-post-thumbnail">
+              <img src="../{{ prev.thumbnail }}"/>
+            </div>            
+            <div class="pagination-post-title">
+              <span class="pagination-post-text">Prev</span>
+              {{ prev.title }}
+            </div>
+          </a>
+        </div>
+      {% endunless %}
+          {% unless forloop.last %}
+        {% assign next = catg_posts[forloop.index] %}
+        <div class="pagination-group next">
+          <a href="{{ site.baseurl }}{{ next.url }}">
+            <div class="pagination-post-title">
+              <span class="pagination-post-text">Next</span>
+              {{ next.title }}
+            </div>
+            <div class="pagination-post-thumbnail">
+              <img src="../{{ next.thumbnail }}"/>
+            </div>
+          </a>
+        </div>
+      {% endunless %}
+    {% endif %}
+    {% assign prev = post %}
+  {% endfor %}
+  </div>
+</div>
+

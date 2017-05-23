@@ -1,0 +1,90 @@
+$thumb-size: 100px;
+
+@media screen and(max-width: $mobile-width-h){
+  $thumb-size: 64px;
+}
+
+.pagination{
+  .next{
+    float: right;
+  }
+  .pagination-group{
+    display: inline-block;
+    max-width: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 0 $primary;
+    transition: all 0.6s ease;
+    &.prev{
+      margin-right: 10px;
+      .pagination-post-thumbnail{
+        border-radius: 3px 0 0 5px;     
+      }
+    }
+    &.next{
+      .pagination-post-thumbnail{
+        border-radius: 0 3px 5px 0;
+      }
+      .pagination-post-text{
+        text-align: right;
+      }
+    }
+    .pagination-post-thumbnail{
+      line-height: 0;
+      width: $thumb-size;
+      height: $thumb-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      opacity: 0.9;
+      transition: all 0.6s ease;
+      img{
+        transition: all 0.2s ease-in;
+      }
+    }
+    .pagination-post-title{
+      padding: 0 16px;
+      max-width: 400px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .pagination-post-text{
+        display: block;
+        font-size: 0.6em;
+        color: $font-color-light;
+      }
+    }
+    &>*{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    @media screen and (max-width: 414px){
+      display: block;
+      max-width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+  .pagination-group.prev:hover,
+  .pagination-group.next:hover{
+    transition: all 0.6s ease;
+    border-radius: 3px;
+    box-shadow: -2px 0 0 $primary, -1px -1px 0 $primary, 1px 1px 0 $primary, 2px 2px 0 $primary, 3px 3px 0 $primary, 4px 4px 0 $primary;
+    .pagination-post-thumbnail{
+      opacity: 1;
+      img{
+        transform: scale(1.14);
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+  .pagination-group.next:hover{
+    box-shadow: 2px 0 0 $primary, -1px -1px 0 $primary, -1px 1px 0 $primary, -2px 2px 0 $primary, -3px 3px 0 $primary, -4px 4px 0 $primary;
+  }
+}
+
+.on-thumb{
+  max-width: inherit;
+  width: 200px;
+}

@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Doodle in NYC"
+date: 2015-01-25 14:09:00 +0800
+category: doodle
+thumbnail: "images/nyc-trip/pj-student-card.jpg"
+permalink: /doodle/nyc-trip/
+---
+### Doodle or nothing
+出去玩就是要塗鴉啊
+<figure><img src="../images/nyc-trip/pj-student-card.jpg"></figure>

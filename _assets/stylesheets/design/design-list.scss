@@ -1,0 +1,27 @@
+.design-list_wraper{
+  margin-top: 20px;
+  .design-list{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    @media screen and (max-width: $tablet-width){
+      flex-flow: column;
+    }
+    .post{
+      flex-basis: 24%;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+      @media screen and (max-width: $tablet-width){
+        flex-basis: 100%;
+        margin: 0 0 40px 0;      
+      }
+    }
+  }
+  .placeholder{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+  }
+}

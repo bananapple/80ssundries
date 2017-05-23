@@ -1,0 +1,27 @@
+<header class="header">
+
+  <div class="logo">
+    <h1><a href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
+    <div class="mobile-logo">
+      <a href="{{ "/" | relative_url}}">
+        80ss
+      </a>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <ul class="nav-list">
+    {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+            {% assign current = 'active' %}
+        {% endif %}
+        <li class="element nav-items {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+  </nav>
+
+</header>

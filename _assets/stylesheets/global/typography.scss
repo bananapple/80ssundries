@@ -1,0 +1,64 @@
+body,
+h1,
+a{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "Open Sans", sans-serif; 
+  font-weight: normal;
+}
+body{
+  font-size: 1em;
+  line-height: 1.4em;
+  color: $font-color-base;
+}
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+h2{
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+h3{
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1em;
+}
+h1,h2,h3{
+  color: $heading-color;
+  margin-bottom: 20px;
+}
+a{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(#333, 0.8);
+  border-bottom: 2px solid $b0ss-yellow;
+  &:hover,
+  &:focus{
+    color: rgba(#333, 1);
+  }
+}
+.heading-display{
+  font-family: $display-font;
+  color: $font-color-base;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.text-center{
+  text-align: center;
+}
+.zh{
+  font-size: 80%;
+  vertical-align: 0.1em;
+  font-weight: 700;
+}
+.br{
+  display: block;
+  &>*{
+    display: block;    
+  }
+}
+* ::selection{
+  background-color: #333;
+  color: $primary;
+}

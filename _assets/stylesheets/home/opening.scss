@@ -1,0 +1,27 @@
+.home{
+  display: flex;
+  flex-flow: column;  
+}
+.opening{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  min-height: 80vh;
+  text-align: center;
+  @media screen and (max-width: $mobile-width-h){
+    overflow: hidden;    
+  }
+  .opening-slogan{
+    max-width: 390px;
+    margin-top: 20px;
+    h1{
+      font-size: 3.8em;
+      line-height: 1.24em;
+      font-weight: normal;
+      color: #333;
+    }
+  }
+}
+.scroll-hint{
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh-Hant" }}">
+
+  {% include head.html %}
+
+  <body class="contact-header">
+    {% include header.html %}  
+    <main aria-label="Content" id="pjax-container">
+      {% include contact.html %}
+      {% include contact-vidbg.html %}
+    </main>
+
+    <!-- {% include footer.html %} -->
+    
+    {% js main %}
+    {% js formspree %}
+    
+  </body>
+
+</html>

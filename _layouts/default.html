@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh-Hant" }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include skate-exclamation.html %}
+    {% include header.html %}
+    
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+
+    <!-- {% include footer.html %} -->
+    
+    {% js main %}
+  </body>
+
+</html>
