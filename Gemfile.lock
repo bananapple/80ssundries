@@ -67,6 +67,7 @@ DEPENDENCIES
   jekyll (= 3.4.2)
   jekyll-assets
   jekyll-feed (~> 0.6)
+  sass
   tzinfo-data
   uglifier
 

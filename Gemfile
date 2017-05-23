@@ -28,4 +28,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jekyll-assets"
 gem "autoprefixer-rails"
 gem "uglifier"
-# gem "sass"
+gem "sass"

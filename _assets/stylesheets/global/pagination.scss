@@ -55,6 +55,9 @@ $thumb-size: 100px;
         color: $font-color-light;
       }
     }
+    &>a{
+      border: none;
+    }
     &>*{
       display: flex;
       flex-direction: row;
