@@ -3,7 +3,7 @@ $(document).ready(function() {
       $clone = $header.before($header.clone().addClass("clone"));
 
   $(window).on("scroll", function() {
-    var fromTop = $("body").scrollTop();
+    var fromTop = $(window).scrollTop();
     $('body').toggleClass("down", (fromTop > 32));
   });
 });
