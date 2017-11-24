@@ -1,0 +1,29 @@
+
+.void-desert{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  img{
+    position: absolute;
+  }
+  svg{
+    width: auto;
+    height: 1400px;
+  }
+  .opacity{
+    opacity: 0.4;
+  }
+  .horizon{
+    animation: roadtrip 20s linear infinite;
+  }
+}
+
+@keyframes roadtrip{
+  0%{
+    transform: translateY(-30%);
+  }
+  100%{
+    transform: translateY(0%);    
+  }
+}

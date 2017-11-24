@@ -5,17 +5,14 @@
   align-items: center;
   .logo{
     h1{
-      font-size: 1.2em;
-      line-height: 1.4em;
+      font-size: 1.4em;
+      line-height: 1.6em;
       margin: 0;
       &>a{
         display: block;
         padding: 5px 0 8px 0;
         font-weight: bolder;
         border: none;
-      }
-      @media screen and (max-width: $tablet-width){
-        display: none;
       }
     }
     .mobile-logo{
@@ -31,6 +28,9 @@
   }
   .nav{
     margin-left: 20px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: lighter;
     @media screen and (max-width: $tablet-width){
       padding-left: 10px;
       margin-left: 0;      
@@ -54,7 +54,7 @@
       }    
     }       
     .nav-items{
-      margin-right: 14px;
+      margin-right: 28px;
       @media screen and (max-width: $mobile-width-h){
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,222 @@
+.sockrollers-wrap{
+  position: absolute;
+  z-index: 100;
+  height: 240px;
+  margin: 20px 0 80px;
+  .sockrollers{
+    position: relative;
+    .sockroller{
+      margin-left: -140px;
+      &.right{
+        animation: sliding-right 4s infinite;
+        position: absolute;
+      }
+      &.left{
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        animation: sliding-left 4s infinite;
+        animation-delay: 0.6s;
+      }
+      .sock{
+        img{
+          max-width: intrinsic;
+          max-width: inherit;
+          width: 60px;
+        }
+      }
+    }
+  }
+  .wheels{
+    position: relative;
+    .wheel{
+      position: absolute;
+      top: -8px;  
+    }
+    .front{
+      left: 10px;
+    }
+    .back{
+      right: 10px;
+    }
+    .spiral-wheel-mask{
+      background-color: #ffffff;
+      border: 3px solid #3f3f3f;
+      width: 14px;
+      height: 14px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 100%;
+      z-index: -10;
+    }
+    .spiralbody div, .spiralbody {
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      border-top: 3px solid #3f3f3f;
+      border-left: 3px solid #3f3f3f;
+      border-radius: 100% 0 0 0;
+      transform: rotate(90deg);
+      box-sizing: border-box;
+    }
+    .spiralbody{
+      top: -4px;
+      left: -4px;
+      animation: spiralspin 120000s infinite linear;
+    }
+  }
+
+  @keyframes spiralspin {
+    0% {
+        transform: rotate(0deg);
+       }
+
+    100% {
+        transform: rotate(-72000000deg);
+       }  
+    } 
+
+  @keyframes sliding-left {
+    0% {
+      top: 40px;
+      left: 40px;
+      transform: rotate(0deg);
+    }
+    30%{
+      top: 44px;
+    }
+    59% {
+      top: 40px;
+      left: 50px;
+      transform: rotate(0deg);
+    }
+    60% {
+      top: 30px;
+      left: 60px;
+      transform: rotate(-10deg);
+    }
+    68% {
+      top: -20px;
+      left: 70px;
+      transform: rotate(-40deg);
+    }
+    74% {
+      top: -32px;
+      left: 60px;
+      transform: rotate(30deg);
+    }
+    78%{
+      left: 50px;
+      transform: rotate(48deg); 
+    }
+    82% {
+      top: -36px;
+      left: -30px;
+      transform: rotate(40deg);
+    }
+    100% {
+      top: 40px;
+      left: 40px;
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes sliding-right {
+    0% {
+      top: 20px;
+      left: 20px;
+      transform: rotate(0deg);
+    }
+    10% {
+      top: 10px;
+      left: 60px;
+      transform: rotate(-10deg);
+    }
+    30% {
+      top: -40px;
+      left: 100px;
+      transform: rotate(-24deg);
+    }
+    50% {
+      top: -30px;
+      left: 10px;
+      transform: rotate(28deg);
+    }
+    60% {
+      top: 10px;
+      left: 20px;
+      transform: rotate(14deg);
+    }
+    70% {
+      top: 18px;
+      left: -5px;
+      transform: rotate(0deg);
+    }
+    84%{
+      top: 20px;
+      left: 20px;
+    }
+    100% {
+      top: 20px;
+      left: 20px;
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.right-to-left{
+  animation: right-to-left 18s infinite;
+}
+.left-to-right{
+  position: absolute;
+  bottom: 40px;
+  animation: left-to-right 20s infinite;
+  animation-delay: 0.2s;
+  img{
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .sockrollers>.sockroller.right,
+  .sockrollers>.sockroller.left{
+    animation-direction: reverse;
+  }
+}
+
+@keyframes right-to-left{
+  0%{
+    opacity: 0;
+    right: -200px;
+  }
+  4%{
+    opacity: 1;
+    right: -100px;
+  }
+  96%{
+    opacity: 1;
+    right: 2800px;    
+  }
+  100%{
+    opacity: 0;
+    right: 3000px;
+  }
+}
+@keyframes left-to-right{
+  0%{
+    opacity: 0;
+    left: -500px;
+  }
+  4%{
+    opacity: 1;
+    left: -400px;
+  }
+  96%{
+    opacity: 1;
+    left: 2800px;
+  }
+  100%{
+    opacity: 0;
+    left: 3000px;
+  }
+}
+
