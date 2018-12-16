@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.4.2"
+gem "jekyll", ">= 3.6.3"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -28,3 +28,4 @@ gem "uglifier"
 gem "sass"
 gem "sprockets", ">= 3.7.2"
 gem "rack", ">= 1.6.11"
+gem "ffi", ">= 1.9.24"
