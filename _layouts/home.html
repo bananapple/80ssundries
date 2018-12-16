@@ -9,8 +9,7 @@
     
     {% include home/opening.html %}
 
-    {% asset main.js %}
-    
+    <script src="{{ base.url | prepend: site.url }}/assets/js/main.js"></script>
   </body>
 
 </html>
