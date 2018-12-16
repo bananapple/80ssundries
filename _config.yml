@@ -22,8 +22,6 @@ twitter_username: 80ssundries
 github_username:  bananapple
 
 navigation:
- - title: design
-   url: /design
  - title: doodle
    url: /doodle
  - title: about
