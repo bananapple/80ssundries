@@ -20,7 +20,7 @@
   {% else %}
   <meta property="og:image" content="/assets/images/site-poster.png" />
   {% endif %}
-  {% css main %}
+  {% asset main.css %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   

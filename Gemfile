@@ -22,7 +22,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6" 
 end
 
-gem "jekyll-assets"
+gem "jekyll-assets", group: :jekyll_plugins
 gem "autoprefixer-rails"
 gem "uglifier"
 gem "sass"

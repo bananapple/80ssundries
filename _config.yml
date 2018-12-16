@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 80ssundries
 email: 2and3and4and1@gmail.com
-description: Wanyu Chang, a web designer base in Taipei
+description: Wanyu Chang, a web designer based in Taipei
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://80ssundries.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 80ssundries
@@ -32,7 +32,7 @@ navigation:
 # Build settings
 markdown: kramdown
 
-gems:
+plgins:
   - jekyll-feed
   - jekyll-assets
   
@@ -45,14 +45,3 @@ timezone: Asia/Taipei
 sass:
   style: compressed
 
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-      - _assets/images
-      - _assets/javascripts
-      - _assets/stylesheets
-
-features:
-  liquid: true
-  
