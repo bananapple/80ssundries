@@ -10,8 +10,8 @@
 
     <!-- {% include footer.html %} -->
     
-    <script src="{{ base.url | prepend: site.url }}/assets/js/main.js"></script>
-    <script src="{{ base.url | prepend: site.url }}/assets/js/formspree.js"></script>
+    {% asset main.js %}
+    {% asset formspree.js %}
     
   </body>
 
