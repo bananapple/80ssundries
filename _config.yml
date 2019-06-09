@@ -22,12 +22,14 @@ twitter_username: 80ssundries
 github_username:  bananapple
 
 navigation:
- - title: doodle
-   url: /doodle
- - title: about
-   url: /about
- - title: contact
-   url: /contact
+  - title: doodle
+    url: /doodle
+  - title: about
+    url: /about
+  - title: blog
+    url: /blog
+  - title: contact
+    url: /contact
 
 # Build settings
 markdown: kramdown
@@ -35,7 +37,7 @@ markdown: kramdown
 plgins:
   - jekyll-feed
   - jekyll-assets
-  
+
 exclude:
   - Gemfile
   - Gemfile.lock
