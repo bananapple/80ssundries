@@ -1,2 +1,2 @@
 # 80ssundries
-my website
+The source code of my illustration portfolio website.
