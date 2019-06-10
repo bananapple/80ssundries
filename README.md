@@ -14,7 +14,7 @@ The source code of my illustration portfolio website.
 I seperated Jekyll source code and built static files.
 
 1. Use jekyll's method `jekyll build` to generate static files
-1. Copy the folder and paste to the static file repository
+1. Copy the folder and paste to the static file repository (not this one)
 1. Because it is using GitHub to host, so just `git push` the code, and done
 
 ## Misc
