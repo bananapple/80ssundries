@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "zh-Hant" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'zh-Hant' }}">
 
   {% include head.html %}
 
@@ -10,7 +10,7 @@
     <main aria-label="Content">
       {{ content }}
     </main>
-    {% asset main.js %}
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 
 </html>
