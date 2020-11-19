@@ -41,6 +41,8 @@ plgins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - tmp/
+  - vendor/
 
 timezone: Asia/Taipei
 

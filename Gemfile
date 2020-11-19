@@ -25,7 +25,7 @@ end
 gem "jekyll-assets", group: :jekyll_plugins
 gem "autoprefixer-rails"
 gem "uglifier"
-gem "sass"
+gem 'sassc'
 gem "sprockets", ">= 3.7.2"
 gem "rack", ">= 1.6.11"
 gem "ffi", ">= 1.9.24"
